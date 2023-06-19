@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .custom-selected:focus {
+            background-color: rgb(229, 228, 228);
+        }
+    </style>
+</head>
+<!-- titre, descriptions , img , dates , avis , prix -->
+<body>
+    <form class="row mx-auto col-6 col-md-4 col-lg-4">
+        <h1 class="text-center">Ajouter produit</h1>
+        <div class="mb-3">
+            <label for="inputUsername" class="form-label">Titre</label>
+            <input type="text" class="form-control custom-selected" id="inputUsername"
+                aria-describedby="userHelp" placeholder="username">
+        </div>
+        <div class="mb-3">
+            <label for="inputDescription" class="form-label">Description</label>
+            <input type="text" class="form-control custom-selected" id="inputDescription"
+                placeholder="description">
+        </div>
+        <div class="mb-3">
+            <label for="inputImage" class="form-label">Image</label>
+            <input type="file" class="form-control custom-selected" id="inputImage">
+        </div>
+        <div class="mb-3">
+            <label for="inputDate" class="form-label">Date</label>
+            <input type="date" class="form-control custom-selected" id="inputDate">
+        </div>
+        <div class="mb-3">
+            <label for="inputAvis" class="form-label">Avis</label>
+            <input type="text" class="form-control custom-selected" id="inputAvis"
+                placeholder="avis">
+        </div>
+        <div class="mb-3">
+            <label for="inputPrix" class="form-label">Prix</label>
+            <input type="number" class="form-control custom-selected" id="inputPrix" min="1.99" step="0.01" toFixed(2)>
+        </div>
+        <button type="submit" class="btn btn-primary mx-auto col-md-5 rounded-pill">Ajouter Produit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
